@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< Upstream, based on branch 'main' of https://github.com/latchipatulasai/RestAssuredDemo2.git
       <class name="Day1.HttpRequest">
         <methods>
           <include name="deleteUser"/>
@@ -10,6 +11,13 @@
           <include name="updateUser"/>
         </methods>
       </class> <!-- Day1.HttpRequest -->
+=======
+      <class name="Day2.DiffWaysToCreatePostRequestBody">
+        <methods>
+          <include name="testPostusingJsonLibrary"/>
+        </methods>
+      </class> <!-- Day2.DiffWaysToCreatePostRequestBody -->
+>>>>>>> 762db40 s
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

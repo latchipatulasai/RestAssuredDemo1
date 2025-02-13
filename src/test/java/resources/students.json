@@ -1,0 +1,99 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "arun",
+      "location": "Male",
+      "phone": "87",
+      "courses": [
+        "python",
+        "java"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "rajesh",
+      "location": "Male",
+      "phone": "100",
+      "courses": [
+        "python",
+        "java"
+      ]
+    },
+    {
+      "id": 3,
+      "courses": [
+        "c",
+        "v++"
+      ],
+      "phone": "9868787",
+      "name": "arun",
+      "locaton": "France"
+    },
+    {
+      "id": 4,
+      "courses": [
+        "c",
+        "v++"
+      ],
+      "phone": "9868787",
+      "name": "arun",
+      "locaton": "France"
+    },
+    {
+      "id": 5,
+      "courses": [
+        "c",
+        "v++"
+      ],
+      "phone": "986878787",
+      "name": "kiran",
+      "locaton": "Italy"
+    },
+    {
+      "id": 6,
+      "courses": [
+        "c",
+        "v++"
+      ],
+      "phone": "986878787",
+      "name": "kiran",
+      "locaton": "Italy"
+    },
+    {
+      "id": "f967",
+      "mapType": "java.util.HashMap",
+      "empty": false
+    },
+    {
+      "id": "e75e",
+      "mapType": "java.util.HashMap",
+      "empty": false
+    },
+    {
+      "id": "a194",
+      "empty": false,
+      "mapType": "java.util.HashMap"
+    },
+    {
+      "id": "6317",
+      "mapType": "java.util.HashMap",
+      "empty": false
+    },
+    {
+      "id": "2ed8",
+      "empty": false,
+      "mapType": "java.util.HashMap"
+    },
+    {
+      "id": "ce17",
+      "courses": [
+        "c",
+        "v++"
+      ],
+      "phone": "986878787",
+      "name": "kiran",
+      "location": "Italy"
+    }
+  ]
+}
