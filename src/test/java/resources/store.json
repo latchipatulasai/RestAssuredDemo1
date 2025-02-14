@@ -1,0 +1,52 @@
+{
+  "book": [
+    {
+      "author": "sai",
+      "category": "fiction",
+      "location": "Male",
+      "price": "1000",
+      "title":"sword og honor"
+    },
+    {
+     
+      "author": "sai",
+      "category": "fiction",
+      "location": "Male",
+      "price": "1000",
+      "title":"sword og honor"
+    },
+    {
+     
+      "author": "vinay",
+      "category": "fiction",
+      "location": "Male",
+      "price": "1000",
+      "title":"sword og honor"
+    },
+    {
+      
+      "author": "sai",
+      "category": "fiction",
+      "location": "Male",
+      "price": "17600",
+      "title":"sword og honor"
+    },
+    {
+     
+      "author": "kill",
+      "category": "fiction",
+      "location": "Male",
+      "price": "1000",
+      "title":"sword og honor"
+    },
+    {
+     
+      "author": "kumar",
+      "category": "fiction",
+      "location": "Male",
+      "price": "1000",
+      "title":"sword og honor"
+    }
+    
+  ]
+}
