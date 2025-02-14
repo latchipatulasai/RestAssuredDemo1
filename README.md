@@ -4,7 +4,7 @@ Prerequsites:
 
 URLS:https://reqres.in/api 
 
-required dependencies: rest-assured, testng, hamcrest, jackson-databind, jackson-core, json
+required dependencies: rest-assured, testng, hamcrest, jackson-databind, jackson-core, json,json-path,json-schema-validator
 
 
 # Session:1 
@@ -106,4 +106,61 @@ log().body()//it will print only body from the response means code
 
 .log().all();//it will print all the data 
 
+--------------
+# Session:4
 
+# Parsing Response Body || JSONObject
+
+how to validate response data along wiht xml and Json  format-->for that we have a special classes available 
+
+//go to jsonpathfinder website for getting josn path for particular element
+
+.header("Content-Type", "aplication/json; charset=utf-8")
+
+		//go to jsonpathfinder website for getting josn path for particular element
+  
+		.body("book[3].title", equalTo("sword og honor"));
+
+  --this is one way to validate specific field in json
+  
+  //two types assertions and hrmmatch assertions before all are hrm matchers ,below we used testng assertions
+  
+		  Assert.assertEquals(res.getStatusCode(),200);
+    
+		  Assert.assertEquals(res.header("Content-Type"),"aplication/json; charset=utf-8");//like this way you can validate all
+    
+		String bookname= res.jsonPath().get("book[3].title").toString();
+  
+		Assert.assertEquals(bookname, "sword og honor");
+  
+		//apart from this we can do more validation compare to hrm matchers and testng
+
+
+  # Session 5
+
+  # Parsing XML Response || File Upload and Download
+
+  one api: http://restapi.adequateshop.com/api/Traveler?page=1
+  
+  http://restapi.adequateshop.com/api/Tourist?page=2
+  
+  https://fakerestapi.azurewebsites.net/index.html
+  xmlpath
+
+
+-->For uploading file need to run 
+cmd >need to start api run the backend server like spring application
+
+//nee to give file path in given precondintion gave in given
+    	//to specify form u have one method and file is parameter for single file upload
+
+     //nee to give file path in given precondintion gave in given
+    	//to specify form u have one method,files is parameter for multiple file upload
+
+  	//nee to give file path in given precondintion gave in given
+       	//if file downlaod a new request will avialbe if you that request using get and status code 200 the file down;loaded
+
+        	//nee to give file path in given precondintion gave in given
+       	//if file upload a new request will avialbe if you that request using get and status code 200 the file uploaded
+
+       
