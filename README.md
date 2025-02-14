@@ -89,4 +89,9 @@ before question mark->that is path parameters ->https://reres.in/api/users
 
 after questiong mark -->that is called Query parameter->page=2
 
+# cookies and Headers :
+Some times when you send data  cookies have created and what are the headers are created by the request and  i want to capture some data from cookies and Headers
+Cookies : ![image](https://github.com/user-attachments/assets/b5ce8baa-366b-40c6-b927-41aae976932e)
+Headers:  ![image](https://github.com/user-attachments/assets/e853faee-f4f3-48ba-99b5-18a1c5fcd52f)
+
 
