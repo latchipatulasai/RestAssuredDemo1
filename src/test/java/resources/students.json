@@ -1,7 +1,7 @@
 {
   "students": [
     {
-      "id": 1,
+      "id": "1",
       "name": "arun",
       "location": "Male",
       "phone": "87",
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "rajesh",
       "location": "Male",
       "phone": "100",
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "courses": [
         "c",
         "v++"
@@ -31,7 +31,7 @@
       "locaton": "France"
     },
     {
-      "id": 4,
+      "id": "4",
       "courses": [
         "c",
         "v++"
@@ -41,7 +41,7 @@
       "locaton": "France"
     },
     {
-      "id": 5,
+      "id": "5",
       "courses": [
         "c",
         "v++"
@@ -51,7 +51,7 @@
       "locaton": "Italy"
     },
     {
-      "id": 6,
+      "id": "6",
       "courses": [
         "c",
         "v++"
@@ -94,6 +94,31 @@
       "phone": "986878787",
       "name": "kiran",
       "location": "Italy"
+    },
+    {
+      "id": "4bb0",
+      "empty": false,
+      "mapType": "java.util.HashMap"
+    },
+    {
+      "id": 66,
+      "courses": [
+        "python",
+        "java"
+      ],
+      "phone": "100989",
+      "name": "rajesh",
+      "location": "Male"
+    },
+    {
+      "id": "f0c0",
+      "name": "kiran",
+      "location": "Italy",
+      "phone": "986878787",
+      "courses": [
+        "c",
+        "v++"
+      ]
     }
   ]
 }

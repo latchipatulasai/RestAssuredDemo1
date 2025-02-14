@@ -1,8 +1,12 @@
 package Day2;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.HashMap;
 
 import org.json.JSONObject;
+import org.json.JSONTokener;
 import org.testng.annotations.Test;
 
 import io.restassured.matcher.ResponseAwareMatcher;
@@ -76,7 +80,7 @@ public class DiffWaysToCreatePostRequestBody {
 		.log().all();
 	}
 	//3)3)post request body creation using POJO  class --plain object java  -->here we are using getters and setters
-	//@Test(priority = 1)
+	@Test(priority = 1)
 	void testPostusingPOJO() {
 		// using json object we did
 	Pojo_PostRequest data=new Pojo_PostRequest();
@@ -96,5 +100,23 @@ public class DiffWaysToCreatePostRequestBody {
 		.body("phone", equalTo("986878787"))
 		.log().all();
 	}
+	//@Test(priority=1)
 	//4)post request using external json file data --create BODY.JSON in our project 
+	void testPostusingExternalJsonFile() throws Exception
+	{
+		File f=new File(".\\body.json");
+		FileReader fr=new FileReader(f);
+		JSONTokener jt=new JSONTokener(fr);
+		JSONObject data=new JSONObject(jt);
+
+		given().contentType("application/json").body(data.toString())
+		
+		.when().post("http://localhost:3000/students")
+
+		.then().statusCode(201)
+		.body("name", equalTo("rajesh"))
+		.body("location", equalTo("Male"))
+		.body("phone", equalTo("100989"))
+		.log().all();
+	}
 }
