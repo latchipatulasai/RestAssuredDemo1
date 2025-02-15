@@ -134,7 +134,7 @@ how to validate response data along wiht xml and Json  format-->for that we have
 		Assert.assertEquals(bookname, "sword og honor");
   
 		//apart from this we can do more validation compare to hrm matchers and testng
-
+------------------------------------
 
   # Session 5
 
@@ -162,5 +162,51 @@ cmd >need to start api run the backend server like spring application
 
         	//nee to give file path in given precondintion gave in given
        	//if file upload a new request will avialbe if you that request using get and status code 200 the file uploaded
+	----------------
+# Session 6
+# JSON/XML Schema Validations
+-->In the respone what we are giving data is we  are giving correctly or not 
+what ever response we capture the response is generated according to the schema or not so that we are going to according to schema or not
+Response Validation -->validate the response (whtat kind of data)
+Schema Validation-->validate the type(type of data)
 
-       
+JSon Response(.json) --> Json schema(.json)
+XML Response(.xml)  --> xml schema(.xsd)
+
+JSON:
+
+In Postman we did same thing
+run our stor api:http://localhost:3000/book
+Take response and copy it and got Json Schema tool and paste then it will generate schema copy that ,come postman and paste it and compare
+Same thing we can do in through automation
+
+-josn-->jsonschema converter
+url:https://jsonformatter.org//json-to-jsonschema
+
+.when()
+		.get("http://localhost:3000/store")
+		.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("storeJsonSchema.json"));
+  
+XML :still we can validate
+
+postman doesn't support xml schema validation
+For  xml schema generator : convertsimple.com
+just like a json create seperate file
+
+# Serializaton and De Serialization
+
+
+Body (json format)--->request -->Response(json)
+Serialization is the process of converting the state of an object into a byte stream, which can then be saved to a file or transferred over a network. Deserialization is the reverse process, where the byte stream is used to recreate the actual Java object in memory.
+
+To make a Java object serializable, the class must implement the java.io.Serializable interface, which is a marker interface with no methods. The ObjectOutputStream class provides the writeObject() method for serialization, while the ObjectInputStream class provides the readObject() method for deserialization.
+
+
+![image](https://github.com/user-attachments/assets/2514df75-6c4f-4f42-a77a-1f9905f15f18)
+
+
+
+
+
+
+
