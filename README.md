@@ -205,7 +205,22 @@ To make a Java object serializable, the class must implement the java.io.Seriali
 ![image](https://github.com/user-attachments/assets/2514df75-6c4f-4f42-a77a-1f9905f15f18)
 
 
+-------
+# Types of Authorization || Faker Liabrary
 
+Difference authentication an authorization
+
+authentication :check user is valid or not
+
+authorization :checks access what kinds of authentication for the user
+
+authentication types:
+1)Basic
+2)Digest
+3)Preempive
+4)Bearer token
+5)oauth 1.0,2.0
+6)API Key 
 
 
 
