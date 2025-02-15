@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-14T11:05:14 IST" name="Default suite" finished-at="2025-02-14T11:05:23 IST" duration-ms="9213">
+  <suite started-at="2025-02-15T07:15:28 IST" name="Default suite" finished-at="2025-02-15T07:15:29 IST" duration-ms="382">
     <groups>
     </groups>
-    <test started-at="2025-02-14T11:05:14 IST" name="Default test" finished-at="2025-02-14T11:05:23 IST" duration-ms="9213">
-      <class name="Day3.LoggingDemo">
-        <test-method signature="testlog()[pri:0, instance:Day3.LoggingDemo@5c5eefef]" started-at="2025-02-14T11:05:14 IST" name="testlog" finished-at="2025-02-14T11:05:23 IST" duration-ms="9153" status="PASS">
+    <test started-at="2025-02-15T07:15:28 IST" name="Default test" finished-at="2025-02-15T07:15:29 IST" duration-ms="382">
+      <class name="Day6.SerilizationDeserilization">
+        <test-method signature="ConvertJson2pojo()[pri:0, instance:Day6.SerilizationDeserilization@9597028]" started-at="2025-02-15T07:15:28 IST" name="ConvertJson2pojo" finished-at="2025-02-15T07:15:29 IST" duration-ms="312" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testlog -->
-      </class> <!-- Day3.LoggingDemo -->
+        </test-method> <!-- ConvertJson2pojo -->
+      </class> <!-- Day6.SerilizationDeserilization -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

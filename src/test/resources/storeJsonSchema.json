@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome3",
+  "definitions": {
+      "Welcome3": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+              "book": {
+                  "type": "array",
+                  "items": {
+                      "$ref": "#/definitions/Book"
+                  }
+              }
+          },
+          "required": [
+              "book"
+          ],
+          "title": "Welcome3"
+      },
+      "Book": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+              "author": {
+                  "type": "string"
+              },
+              "category": {
+                  "type": "string"
+              },
+              "location": {
+                  "type": "string"
+              },
+              "price": {
+                  "type": "string",
+                  "format": "integer"
+              },
+              "title": {
+                  "type": "string"
+              },
+              "id": {
+                  "type": "string"
+              }
+          },
+          "required": [
+              "author",
+              "category",
+              "id",
+              "location",
+              "price",
+              "title"
+          ],
+          "title": "Book"
+      }
+  }
+}
