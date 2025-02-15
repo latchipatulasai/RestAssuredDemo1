@@ -1,4 +1,4 @@
-# RestAssuredDemo2
+_# RestAssuredDemo2
 
 Prerequsites:
 
@@ -206,6 +206,7 @@ To make a Java object serializable, the class must implement the java.io.Seriali
 
 
 -------
+# Session 7
 # Types of Authorization || Faker Liabrary
 
 Difference authentication an authorization
@@ -214,14 +215,109 @@ authentication :check user is valid or not
 
 authorization :checks access what kinds of authentication for the user
 
-authentication types:
+# authentication types:
+
 1)Basic
+
 2)Digest
+
 3)Preempive
+
 4)Bearer token
+
 5)oauth 1.0,2.0
+
 6)API Key 
 
+1)Basic
+
+// basic authentication--just type username and password
+
+	void testBasicAuthentication() {
+		
+		given().auth().basic("postman", "password")
+		.when().get("https://postman-echo.com/basic-auth")
+		.then()
+		.statusCode(200)
+2)Digest
+
+// basic authentication--just type username and password
+
+	void testDigestAuthentication() {
+		
+		given().auth().digest("postman", "password")
+		.when().get("https://postman-echo.com/basic-auth")
+		.then()
+		.statusCode(200)
+
+3)preemptive
+// preemptive authentication--just type username and password (combianation of digit basic)
+
+	void testPreemptiveAuthentication() {
+		
+		given().auth().preemptive().basic("postman", "password")
+		.when().get("https://postman-echo.com/basic-auth")
+		.then()
+		.statusCode(200)
+
+  both three is same
+
+  
+4)bearer Token
+
+//bearer Token 
+//OAuth2 is same as OAuth1   Token but no of required parametrs is decreased -developer will give these details like consumerkey,consumersecrat, access token,tokensecrate
+
+void testOauth2Authentication() {
+
+	//taking barer token
+ 
+	given().auth().oauth2("ghp_24pH0Icz1PKHC1qOtLwj57AuDYmtSz2fuYKP")
+	.when().get("https://api.github.com/user/repos")
+	.then()
 
 
+5)oauth 1.0 and 2.0 ,2.0 is advanced than 1.0
 
+//oAuth1 bearer Token -developer will give these details like consumerkey,consumersecrat, access token,tokensecrate
+
+void testOauth1Authentication() {
+
+	//taking barer token
+ 
+	given().auth().oauth("consumerKey","consumerSecrat","accessToken","tokenSecrate")
+	.when().get("url")
+
+ //OAuth2 is same as OAuth1   Token but no of required parametrs is decreased -developer will give these details like consumerkey,consumersecrat, access token,tokensecrate
+ 
+void testOauth2Authentication() {
+
+	//taking barer token
+ 
+	given().auth().oauth2("ghp_24pH0Icz1PKHC1qOtLwj57AuDYmtSz2fuYKP")
+	.when().get("https://api.github.com/user/repos")
+
+6)APIKey 
+
+//quey params we nedd to give api key authentication
+
+void testAPIKeyAuthentication() {
+
+	// used to pass quey params
+ 
+	given()
+	.queryParam("appid", "fe9c5cddb7e01d747b4611c3fc9eaf2c")
+	.when().get("api.openweathermap.org/data/2.5/forecast/daily?q=Delhi&units=metric&cnt=7")
+ 
+ He Explaind about JSON ARRY and JSON OBJECT
+
+
+ -------
+ # Session 8 
+ # API CHAINING
+
+Chaining is nothing but response from one request is used to request for another request 
+
+Examples:Transparency apis is an examples in ASH
+
+ 
