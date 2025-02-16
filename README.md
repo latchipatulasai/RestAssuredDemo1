@@ -359,3 +359,19 @@ Reports(Extent): Generates comprehensive test reports for easy analysis and iden
 
 ![17396658739703918323099067191815](https://github.com/user-attachments/assets/f5bc0496-324a-4b06-8db4-a9d3f5eb0956)
 
+
+Prerequisite:
+step1: create maven project
+step2:update pom.xml with required dependencies
+step3: create folder structure
+
+step4: create Routes.java-->contains URLS
+step5:create UserEndPoints.java-->CRUD methods implementation
+step6:creating test cases
+
+
+step7 :create data driven test -means prepare xls sheet ,Excel Utility file,data providers in tstng concept
+
+
+
+ 
