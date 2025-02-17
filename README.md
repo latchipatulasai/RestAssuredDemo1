@@ -371,7 +371,13 @@ step6:creating test cases
 
 
 step7 :create data driven test -means prepare xls sheet ,Excel Utility file,data providers in tstng concept
-
+step 8:Generate extent reports
+      extentreport utility
+      testng.xml
+step 9:Add logs
+       add log4j dependencies
+       add log4j.xml
+       
 
 
  
