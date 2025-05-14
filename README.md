@@ -33,6 +33,53 @@ import io.restassured.matcher.RestAssuredMatchers;
 
 import org.hamcrest.Matchers.*;
 
+# Some Sample APIs for automation
+Here are 20 APIs you can use for automation testing practice with Rest Assured:
+
+Public APIs for Testing
+ReqRes API – Fake user data API (Docs)
+
+JSONPlaceholder API – Fake REST API for testing (Docs)
+
+OpenWeather API – Weather data API (Docs)
+
+Dog API – Random dog images (Docs)
+
+Cat Facts API – Random cat facts (Docs)
+
+Authentication & User Management APIs
+GitHub API – Repository automation (Docs)
+
+Spotify API – Music data automation (Docs)
+
+Google OAuth API – Authentication testing (Docs)
+
+Twitter API – Social media automation (Docs)
+
+Firebase API – User authentication (Docs)
+
+E-Commerce & Payment APIs
+Stripe API – Payment processing (Docs)
+
+PayPal API – Online payments (Docs)
+
+Fake Store API – E-commerce testing (Docs)
+
+Amazon Product API – Product search (Docs)
+
+eBay API – Marketplace automation (Docs)
+
+Miscellaneous APIs
+NASA API – Space data (Docs)
+
+Chuck Norris API – Random jokes (Docs)
+
+CoinGecko API – Cryptocurrency data (Docs)
+
+News API – Latest news (Docs)
+
+IP Geolocation API – Location tracking (Docs)
+
 -------
 https://reqres.in/api
 Given Users:
